@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="./20-12.css">
+
+</head>
+
+<body>
+    <div id="content">
+
+        <div class="container">
+            <aside>
+                <div class="top">
+                    <div class="logo">
+                        <img src="download.png" alt="">
+                        <h1 id="logoname"><span id="c_name1"><a href="20-12.html">MET BKC NASHIK</a></span></h1>
+                    </div>
+                    <div class="close" id="close_btn">
+                        <span class="material-icons-sharp">
+                            close
+                        </span>
+                    </div>
+
+                </div>
+                <div class="sidebar">
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            emoji_people
+                        </span>
+                        <h3>Online Attendance</h3>
+                    </a>
+
+                    <a href="admission.html">
+                        <span class="material-symbols-outlined">
+                            other_admission
+                        </span>
+                        <h3>New Admission</h3>
+                    </a>
+
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            switch_access_shortcut_add
+                        </span>
+                        <h3>Access Catalog</h3>
+                    </a>
+
+                    <a href="#">
+                        <span class="material-symbols-outlined">
+                            library_books
+                        </span>
+                        <h3>Courses</h3>
+                    </a>
+
+                    <a href="list.html">
+                        <span class="material-icons-sharp">
+                            chat
+                        </span>
+                        <h3>Students List</h3>
+                    </a>
+
+                    <a href="login.html">
+                        <span class="material-icons-sharp">
+                            chat
+                        </span>
+                        <h3>Online Test</h3>
+                    </a>
+
+
+
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            settings
+                        </span>
+                        <h3>Settings</h3>
+                    </a>
+
+                    <a href="#">
+                        <span class="material-icons-sharp">
+                            logout
+                        </span>
+                        <h3>Logout</h3>
+                    </a>
+                </div>
+            </aside>
+
+
+
+            <!-- ====main===== -->
+
+            <main>
+                <h1>....................................................................MET IOE
+                    ERP....................................................................</h1>
+
+                <div class="date">
+                    <input type="date">
+                </div>
+                <br><br>
+                <h1>Our Placed Students</h1>
+
+                <div class="placement">
+
+                </div>
+            </main>
+
+
+
+            <!-- ======right side==== -->
+            <div class="right">
+                <div class="top">
+                    <button class="menu_btn">
+                        <span class="material-icons-sharp">menu</span>
+
+                    </button>
+
+                    <div class="theme_change">
+                        <!-- <span class="material-icons-sharp active">light_mode</span>
+                        <span class="material-icons-sharp">dark_mode</span> -->
+                        <button id="dark-mode-toggle" onclick="toggleDarkMode()">Toggle Dark Mode</button>
+                    </div>
+
+
+
+
+
+
+                    <div class="profile">
+                        <div class="info">
+                            <a href="login.html">Login</a>
+
+                        </div>
+
+                        <div class="profile_photo">
+                            <img src="yash.jpg" alt="">
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="recent_highlights">
+                    <h2>Announcements</h2>
+                    <div class="highlights">
+                        <div class="highlight">
+                            <div class="profile_photo">
+
+                            </div>
+                            <div class="message">
+                                <p><b>B.E</b> Exams announced on thursday</p>
+
+                            </div>
+                        </div>
+
+                        <div class="highlight">
+                            <div class="profile_photo">
+
+                            </div>
+                            <div class="message">
+                                <p><b>B.E insem</b> marks are displayed on notice board</p>
+
+                            </div>
+                        </div>
+
+                        <div class="highlight">
+                            <div class="profile_photo">
+
+                            </div>
+                            <div class="message">
+                                <p><b>Engineering students</b>have to fill the scholarship form as soo as possible</p>
+                            </div>
+                        </div>
+                        <div class="highlight">
+                            <div class="profile_photo">
+
+                            </div>
+                            <div class="message">
+                                <p><b>MET UTSAV</b>Auditions ongoing for the biggest cultural event in town.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="video-container">
+                        <video controls>
+                          <source src="video.mp4" type="video/mp4">
+                          <source src="video.ogg" type="video/ogg">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                      
+
+                </div>
+
+
+                <br><br>
+
+
+
+
+
+                <div>
+                    <footer class="footer">
+
+                        <p>Any Development Related Query Please Call: Dr. M.U. Kharat Ext - 938, V.T. Kharat Ext - 971
+                            vijayk_ioe@bkc.met.edu</p>
+                    </footer>
+                </div>
+            </div>
+            <script>function toggleDarkMode() {
+                    var body = document.querySelector("body");
+                    var content = document.querySelector("#content");
+                    body.classList.toggle("dark-mode");
+                    content.classList.toggle("dark-mode");
+                }
+                var images = document.querySelectorAll(".slider img");
+                var current = 0;
+
+                function next() {
+                    images[current].classList.remove("active");
+                    current = (current + 1) % images.length;
+                    images[current].classList.add("active");
+                }
+
+                setInterval(next, 3000);
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+form {
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  label, input, select, textarea {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
